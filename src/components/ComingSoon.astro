@@ -1,0 +1,168 @@
+---
+
+const description = "Looking for friends, partners, or maybe even a soulmate? HyperDating is your go-to platform to connect with like-minded individuals in the Hyperliquid universe. Create your profile, explore others, and build meaningful connections. Devs building! Stay tuned for updates."
+import background from '../assets/background.svg';
+
+---
+
+<div class="coming-soon-wrapper">
+    <img id="background" src={background.src} alt="" fetchpriority="high" />
+    <div class="coming-soon">
+        <h1>HyperDating</h1>
+        <p class="description">{description}</p>
+        <div class="socials">
+            <a target="_blank" href="https://app.hyperliquid.xyz/join/DRAGO">
+                <img src="/hyperliquid_wht.png" alt="HyperLiquid" />
+            </a>
+            <a target="_blank" href="https://x.com/yolo_gems">
+                <svg width="40" height="36" viewBox="0 0 40 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M31.4668 -0.566406H37.6002L24.1335 14.7669L39.8668 35.5669H27.5202L17.8535 22.9269L6.78685 35.5669H0.653516L14.9202 19.1669L-0.146484 -0.566406H12.5068L21.2402 10.9803L31.4668 -0.566406ZM29.3202 31.9669H32.7202L10.7202 2.90026H7.06685L29.3202 31.9669Z" fill="white" />
+                  </svg>
+            </a>
+            <a target="_blank" href="https://t.me/yolo_yolo">
+                <svg width="37" height="30" viewBox="0 0 37 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M33.8002 0.433619L2.55855 12.5086C0.450214 13.2753 0.450214 14.617 2.17521 15.0003L10.0335 17.492L13.1002 26.692C13.4835 27.6503 13.2919 28.0336 14.2502 28.0336C15.0169 28.0336 15.4002 27.6503 15.7835 27.267C15.9752 27.0753 17.7002 25.3503 19.6169 23.4336L27.6669 29.3753C29.2002 30.142 30.1585 29.7586 30.5419 28.0336L35.9085 2.92529C36.4835 0.816952 35.1419 -0.333047 33.8002 0.433619ZM29.7752 6.18362L14.8252 19.792L14.2502 26.117L11.1835 16.917L28.8169 5.80029C29.5835 5.22529 30.3502 5.60862 29.7752 6.18362Z" fill="white" />
+                </svg>
+            </a>
+            <a target="_blank" href="https://app.hyperliquid.xyz/join/DRAGO">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M33.8838 7.04634C31.2945 5.83489 28.526 4.95445 25.6315 4.45312C25.276 5.09581 24.8607 5.96023 24.5744 6.64788C21.4975 6.18515 18.4489 6.18515 15.4286 6.64788C15.1423 5.96023 14.7176 5.09581 14.3589 4.45312C11.4613 4.95445 8.68959 5.83812 6.10032 7.05276C0.877738 14.9448 -0.538019 22.6408 0.169861 30.2275C3.63375 32.8142 6.99068 34.3856 10.291 35.4138C11.1058 34.2924 11.8326 33.1002 12.4586 31.8438C11.2663 31.3907 10.1242 30.8316 9.04512 30.1825C9.3314 29.9704 9.61143 29.7487 9.88197 29.5205C16.4637 32.5989 23.6148 32.5989 30.1179 29.5205C30.3916 29.7487 30.6716 29.9704 30.9547 30.1825C29.8725 30.8348 28.7273 31.3939 27.5349 31.847C28.161 33.1002 28.8846 34.2956 29.7026 35.417C33.0061 34.3888 36.3661 32.8174 39.83 30.2275C40.6606 21.4325 38.4111 13.8072 33.8838 7.04634ZM13.3553 25.5617C11.3795 25.5617 9.75925 23.7172 9.75925 21.4711C9.75925 19.2249 11.3449 17.3773 13.3553 17.3773C15.3657 17.3773 16.9859 19.2217 16.9513 21.4711C16.9545 23.7172 15.3657 25.5617 13.3553 25.5617ZM26.6446 25.5617C24.6688 25.5617 23.0485 23.7172 23.0485 21.4711C23.0485 19.2249 24.6342 17.3773 26.6446 17.3773C28.6549 17.3773 30.2752 19.2217 30.2406 21.4711C30.2406 23.7172 28.6549 25.5617 26.6446 25.5617Z" fill="white" />
+                </svg>
+            </a>
+        </div>
+        <p class="coming-soon-abs">Coming Soon</p>
+    </div>
+</div>
+
+<style lang="scss"> 
+    .coming-soon-wrapper {
+        // min-height: 100vh;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // background: linear-gradient(45deg, rgba(46, 16, 101, 0.9) 0%, rgba(143, 26, 126, 0.9) 100%);
+        // position: relative;
+        width: 100%;
+        // overflow: hidden;
+        flex-direction: column-reverse;
+        position: relative;
+    }
+
+    .coming-soon-abs {
+        // transform: translateX(calc(var(--x) / 100));
+        position: static;
+        top: 50%;
+        // transform: translateY(-50%);
+        width: 100%;
+        font-size: 13.8vw;
+        font-weight: 700;
+        margin: 0;
+        background: linear-gradient(to right, #ffffff, #e2e2e2);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-transform: uppercase;
+        z-index: -1;
+        user-select: none;
+        opacity: .2;
+        // margin-top: 90px;
+        white-space: nowrap;
+        // letter-spacing: calc(var(--x) / 200);
+        text-shadow: calc(var(--x) / 200) calc(var(--x) / 200) 0 rgb(177, 169, 169);
+        left: 0;
+        mix-blend-mode: difference;
+
+        @media (max-width: 992px) {
+            position: static;
+            top: 70%;
+            left: 50%;
+            transform: unset;
+            font-size: 10vw;
+            letter-spacing: unset;
+            opacity: .6;
+            text-align: center;
+            margin-top: 2rem;
+            display: block;
+            text-shadow: unset;
+        }
+
+    }
+    .coming-soon {
+        text-align: center;
+        color: white;
+        
+        z-index: 2;
+        padding: 2rem;
+
+        h1 {
+            font-size: clamp(2.375rem, -0.208rem + 8.61vw, 6.25rem);
+            font-weight: 700;
+            
+        }
+
+        .description {
+            font-size: clamp(1.25rem, 2vw, 1.5rem);
+            opacity: 0.8;
+            max-width: 600px;
+            margin: 2rem auto 2rem;
+            line-height: 1.6;
+        }
+
+        .socials {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            align-items: center;
+
+            svg {
+                width: 40px;
+                height: 40px;
+                fill: white;
+
+                @media (max-width: 992px) {
+                    width: 30px;
+                    height: 30px;
+                }
+
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+            img {
+                width: 50px;
+                height: 50px;
+
+                @media (max-width: 992px) {
+                    width: 40px;
+                    height: 40px;
+                }
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+
+
+    .coming-soon-wrapper::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        // background: 
+        //     radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+        //     radial-gradient(circle at 80% 70%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+    }
+
+    #background {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+		filter: blur(30px);
+	}
+</style>
